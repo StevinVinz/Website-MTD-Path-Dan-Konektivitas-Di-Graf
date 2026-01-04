@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Soal Evaluasi - Graf</title>
+    <link rel="stylesheet" href="evaluasi.css">
+</head>
+<body>
+
+<header>
+     <div class="logo">Teori Path & Konektivitas <span>Graf</span></div>
+      <nav>
+            <ul>
+                <li><a href="projekmtk.html">Home</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="soalevaluasi.html">Soal Evaluasi</a></li>
+                <li><a href="Program.html">Program1</a></li>
+                <li><a href="Program2.html">Program2</a></li>
+            </ul>
+      </nav>
+
+</header>
+
+<main>
+    <form id="quizForm">
+
+        <div class="question">
+            <p>1. Path dalam graf adalah …</p>
+            <label><input type="radio" name="q1" value="a"> Kumpulan vertex tanpa edge</label>
+            <label><input type="radio" name="q1" value="b"> Urutan vertex yang dihubungkan oleh edge</label>
+            <label><input type="radio" name="q1" value="c"> Graf tanpa arah</label>
+        </div>
+
+        <div class="question">
+            <p>2. Path sederhana adalah path yang …</p>
+            <label><input type="radio" name="q2" value="a"> Boleh mengulang vertex</label>
+            <label><input type="radio" name="q2" value="b"> Tidak mengulang vertex</label>
+            <label><input type="radio" name="q2" value="c"> Selalu kembali ke titik awal</label>
+        </div>
+
+        <div class="question">
+            <p>3. Path tertutup terjadi jika …</p>
+            <label><input type="radio" name="q3" value="a"> Titik awal ≠ titik akhir</label>
+            <label><input type="radio" name="q3" value="b"> Tidak memiliki edge</label>
+            <label><input type="radio" name="q3" value="c"> Titik awal = titik akhir</label>
+        </div>
+
+        <div class="question">
+            <p>4. Graf dikatakan terhubung jika …</p>
+            <label><input type="radio" name="q4" value="a"> Semua vertex saling terhubung dengan path</label>
+            <label><input type="radio" name="q4" value="b"> Memiliki lebih dari 1 vertex</label>
+            <label><input type="radio" name="q4" value="c"> Tidak memiliki edge</label>
+        </div>
+
+        <div class="question">
+            <p>5. Contoh path terbuka dalam kehidupan sehari-hari adalah …</p>
+            <label><input type="radio" name="q5" value="a"> Rumah → Sekolah → Rumah</label>
+            <label><input type="radio" name="q5" value="b"> Rumah → Pasar → Sekolah</label>
+            <label><input type="radio" name="q5" value="c"> Mengelilingi lapangan</label>
+        </div>
+
+        <button type="button" onclick="cekJawaban()">Submit Jawaban</button>
+    </form>
+
+    <div id="hasil"></div>
+</main>
+
+<script src="evaluasi.js"></script>
+</body>
+</html>
